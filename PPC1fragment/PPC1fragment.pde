@@ -8,7 +8,7 @@
 
 
 PFont myFont;
-
+bg back;
 Word[] words;
 String[] wordFile;
 
@@ -17,9 +17,9 @@ void setup() {
   myFont = createFont("Arial", 32);
   textFont(myFont);
   wordFile = loadStrings("textFile.txt");
-
+  back = new bg();
   words = new Word[wordFile.length];
-  //Correctly place the words
+  //Correctly place the words, no matter how many strings/rows there are
   for (int i = 0; i < wordFile.length; i++) {
     float stringWidth = textWidth(wordFile[i]);
     float stringHeight = textAscent() + textDescent();
@@ -29,8 +29,8 @@ void setup() {
   }
 }
 
-void draw() {
-  background(#000000);
+void draw() { //draws the background and calculates the position of the letters each frame
+  back.display();
   drawAll();
 }
   
