@@ -1,5 +1,5 @@
 class Letter {
-  
+  test
  char myLetter;
  float xPosition, yPosition;
 

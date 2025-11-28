@@ -13,13 +13,13 @@ Word[] words;
 String[] wordFile;
 
 void setup() {
-  size(400, 400);
+  size(600, 600);
   myFont = createFont("Arial", 32);
   textFont(myFont);
   wordFile = loadStrings("textFile.txt");
 
   words = new Word[wordFile.length];
-
+  //Correctly place the words
   for (int i = 0; i < wordFile.length; i++) {
     float stringWidth = textWidth(wordFile[i]);
     float stringHeight = textAscent() + textDescent();
@@ -31,14 +31,9 @@ void setup() {
 
 void draw() {
   background(#000000);
-  line(width/2, 0, width/2, height);
   for(int i = 0; i < wordFile.length; i++){
     words[i].drawLetters();
     words[i].updateWord(mouseX, mouseY);
   }
 }
   
-
-
-void mouseClicked() {  // super simple interaction:
-}

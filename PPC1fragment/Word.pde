@@ -21,15 +21,6 @@ class Word {
     }
   }
 
-  void drawWord() {
-    pushMatrix();
-    translate(xPosition, yPosition);
-    fill(#FFFFFF);
-    textSize(35);
-    text(myWord, 0, 0);
-    popMatrix();
-  }
-
   void drawLetters() {
     for (int i = 0; i< letters.length; i++) {
       letters[i].drawLetter();
