@@ -31,9 +31,12 @@ void setup() {
 
 void draw() {
   background(#000000);
-  for(int i = 0; i < wordFile.length; i++){
+  drawAll();
+}
+  
+  void drawAll(){
+    for(int i = 0; i < wordFile.length; i++){
     words[i].drawLetters();
     words[i].updateWord(mouseX, mouseY);
   }
-}
-  
+  }
