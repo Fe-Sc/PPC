@@ -6,7 +6,7 @@
 // be creative!
 // angelika mader november 2021
 
-  boolean newLetters = false;
+boolean newLetters = false;
 PFont myFont;
 PImage myImage;
 bg back;
@@ -17,6 +17,7 @@ void setup() {
   size(1050, 600);
   myFont = createFont("Arial", 32);
   myImage = loadImage("Quandale.jpg");
+  myImage.loadPixels();
   textFont(myFont);
   wordFile = loadStrings("textFile.txt");
   back = new bg();

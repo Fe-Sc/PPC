@@ -24,6 +24,7 @@ class oldLetter extends Letter {
    textSize(40);
    text(myLetter, 0,0);
    popMatrix();
+   doBrightness();
  }
   
   
