@@ -1,6 +1,7 @@
 class bg{
   //just a class to draw a smiley face in the back
   void drawBackground(){
+    /*
     background(#FFFFFF);
     fill(#000000);
     circle(width/2, height/2, 250);
@@ -13,7 +14,9 @@ class bg{
     fill(#FFDE21);
     noStroke();
     rect(width/2-70, height/2+15, 150, 50);
-    stroke(#000000);
+    stroke(#000000);*/
+    
+    image(myImage, 0,0);
 
   }
   

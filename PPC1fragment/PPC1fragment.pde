@@ -8,13 +8,15 @@
 
 
 PFont myFont;
+PImage myImage;
 bg back;
 Word[] words;
 String[] wordFile;
 
 void setup() {
-  size(600, 600);
+  size(1050, 600);
   myFont = createFont("Arial", 32);
+  myImage = loadImage("Quandale.jpg");
   textFont(myFont);
   wordFile = loadStrings("textFile.txt");
   back = new bg();
