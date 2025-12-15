@@ -6,7 +6,7 @@
 // be creative!
 // angelika mader november 2021
 
-
+  boolean newLetters = false;
 PFont myFont;
 PImage myImage;
 bg back;
@@ -26,8 +26,8 @@ void setup() {
     float stringWidth = textWidth(wordFile[i]);
     float stringHeight = textAscent() + textDescent();
     float totalHeight = wordFile.length * stringHeight;
-       float stringPosY = (height-totalHeight)/2 + i * stringHeight/2;
-           words[i] = new Word(wordFile[i], width/2 - (stringWidth/2), stringPosY + i * stringHeight);
+    float stringPosY = (height-totalHeight)/2 + i * stringHeight/2;
+    words[i] = new Word(wordFile[i], width/2 - (stringWidth/2), stringPosY + i * stringHeight);
   }
 }
 
@@ -35,10 +35,16 @@ void draw() { //draws the background and calculates the position of the letters 
   back.display();
   drawAll();
 }
-  
-  void drawAll(){
-    for(int i = 0; i < wordFile.length; i++){
+
+void drawAll() {
+  for (int i = 0; i < wordFile.length; i++) {
     words[i].drawLetters();
     words[i].updateWord(mouseX, mouseY);
   }
+ 
+}
+
+  void mousePressed(){
+    newLetters = !newLetters;
+    print("clicked");
   }

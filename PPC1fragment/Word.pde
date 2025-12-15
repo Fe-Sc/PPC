@@ -4,7 +4,7 @@ class Word {
   float xPosition, yPosition;
   newLetter [] newletters;
   oldLetter [] oldletters;
-  boolean newLetters = false;
+
   
   Word (String word, float xPosition, float yPosition) {
     myWord = word;
@@ -46,7 +46,5 @@ class Word {
     }
   }
   
-  void onClick(){
-    newLetters = !newLetters;
-  }
+
 }

@@ -17,7 +17,8 @@ class bg{
     stroke(#000000);*/
     
     image(myImage, 0,0);
-
+    myImage.loadPixels();
+    
   }
   
   void display(){
