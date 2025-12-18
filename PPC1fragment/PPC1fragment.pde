@@ -33,7 +33,9 @@ void setup() {
 }
 
 void draw() { //draws the background and calculates the position of the letters each frame
+  
   back.display();
+  back.colorTest();
   drawAll();
 }
 
@@ -44,8 +46,8 @@ void drawAll() {
   }
  
 }
-
+  //switch between letters from subclass 1 and 2 being drawn
   void mousePressed(){
     newLetters = !newLetters;
-    print("clicked");
+    println("clicked");
   }
