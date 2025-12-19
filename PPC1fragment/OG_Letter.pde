@@ -1,5 +1,7 @@
 class oldLetter extends Letter {
-
+  //Mostly unchanged class from week 3, only made into a subclass and now the letters change colors.
+  
+  
   //run constructor from superclass
   oldLetter(char letter, float xPosition, float yPosition) {
     super(letter, xPosition, yPosition);

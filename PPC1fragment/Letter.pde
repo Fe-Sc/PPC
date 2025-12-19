@@ -1,4 +1,6 @@
 class Letter {
+  //Superclass for the letter objects
+  
   char myLetter;
   float xPosition, yPosition;
 

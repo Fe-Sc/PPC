@@ -1,7 +1,8 @@
 class Word {
-  //this class is mostly a remnant of the example, but it is still needed for the letter class to function
+  //class to divide the words into individual letters
   String myWord;
   float xPosition, yPosition;
+  
   //Instances of letter subclasses
   newLetter [] newletters;
   oldLetter [] oldletters;

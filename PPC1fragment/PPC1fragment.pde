@@ -1,10 +1,7 @@
-// here is a very small fragment for a text animation program
-// for the first assignment of Programming and Physical Computing
-// you may use it, or just partly, extend, or throw it away and do sth different,
-// read from a file, add more interesting interaction, more fonts, effect,
-// make an array of words where each one has an own color, let them fade, explode,
-// be creative!
-// angelika mader november 2021
+//Extended version of our week 3 program
+//Made by Fernando Schintz and Koen Stroo
+//2 New subclasses have been made for the text, switch between which gets drawn by clicking
+//The letters change into the opposite color of the pixel behind it
 
 boolean newLetters = false;
 PFont myFont;
@@ -32,7 +29,7 @@ void setup() {
   }
 }
 
-void draw() { //draws the background and calculates the position of the letters each frame
+void draw() { //draws the background and calculates the position of the letters each frame, also loads the image pixels
   
   back.display();
   back.colorTest();

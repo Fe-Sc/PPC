@@ -1,8 +1,8 @@
 class newLetter extends Letter {
-  //time function for sime wave
+  //new subclass, makes the letters move up and down
+  
+  //time function for sine wave
   float time = 0;
-
-
   newLetter(char letter, float xPosition, float yPosition) {
     super(letter, xPosition, yPosition);
   }

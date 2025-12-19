@@ -1,5 +1,5 @@
 class bg {
-  //just a class to draw a smiley face in the back
+  //draws the image in the background
   void drawBackground() {
     image(myImage, 0, 0);
     myImage.loadPixels();
